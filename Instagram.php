@@ -2,19 +2,20 @@
 /*
 Library retrieve instagram search by hashtag
 File name: Instagram.php
+Author: areoid - areg_noid@yahoo.com
 
 Example:
-$insta = new RetrieveInstagram();
+$insta = new Instagram();
 $result = $insta->setMaxData(10)
                 ->setHashtag('sexy')
                 ->retrieve();
 OR get like
-$likes = new RetrieveInstagram();
+$likes = new Instagram();
 $result = $likes->getLikesByInstagramId('POST_INSTA_ID')
                 ->retrieve();
 
 **/
-class RetrieveInstagram
+class Instagram
 {
     private $_hashtag,
             $_error          = false,
