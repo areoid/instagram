@@ -308,5 +308,5 @@ class Instagram
 
 }
 /*
-*	EOF retrieveInstagram.php
+*	EOF Instagram.php
 **/
