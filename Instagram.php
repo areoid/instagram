@@ -130,7 +130,6 @@ class Instagram
 
         if($this->_error)
         {
-            $this->_error = false;
             return $this->showErrorMessage();
         }
         else
@@ -303,12 +302,13 @@ class Instagram
 
         $returned['total'] = count($results);
         $returned['items'] = $results;
-
+        $this->_result = []; // reset value; 
         return $returned;
     }
 
     public function showErrorMessage()
     {
+        $this->_error = false;
         return $this->_error_message;
     }
 
